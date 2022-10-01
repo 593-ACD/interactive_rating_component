@@ -1,0 +1,115 @@
+@use "_vars.scss" as *;
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+body {
+  padding: 1rem;
+  background-color: $very_dark_blue;
+}
+.start_svg {
+  background-color: $very_dark_blue;
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.rating_state {
+  width: 350px;
+  padding: 2rem;
+  background-color: $dark_blue;
+  border-radius: 3%;
+
+  h1 {
+    font: 700 20px "Overpass", sans-serif;
+    color: $white;
+    margin: 0;
+    text-align: left;
+  }
+  p {
+    font: 400 15px "Overpass", sans-serif;
+    color: $light_grey;
+    text-align: left;
+  }
+}
+.rating_form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.bnt {
+  color: $light_grey;
+  background-color: $very_dark_blue;
+  font: 700 15px "Overpass", sans-serif;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+  &:focus {
+    background-color: $light_grey;
+    color: $white;
+  }
+}
+.sub_bnt {
+  width: calc(100vw - 90px);
+  max-width: 300px;
+  height: 35px;
+  margin: 0.5rem;
+  color: $white;
+  background-color: $orange;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font: 700 15px "Overpass", sans-serif;
+
+  &:hover {
+    color: $orange;
+    background-color: $white;
+  }
+}
+
+//---- start of the thank you state ----//
+
+.thankyou_state {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 350px;
+  padding: 2rem;
+  background-color: $dark_blue;
+  border-radius: 3%;
+  h1 {
+    font: 700 20px "Overpass", sans-serif;
+    color: $white;
+    margin: 0;
+    text-align: center;
+  }
+  .text_output {
+    color: $orange;
+    background-color: $very_dark_blue;
+    border-radius: 30px;
+    font: 400 15px "Overpass", sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  p {
+    font: 400 15px "Overpass", sans-serif;
+    color: $light_grey;
+    text-align: center;
+  }
+}

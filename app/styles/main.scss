@@ -1,0 +1,11 @@
+@forward  'global';
+
+*,::before,::after,:active{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;// this sets the font size to 10px
+}
+body{
+    font-size: 1.6rem; // and this to 16px in total 
+}
