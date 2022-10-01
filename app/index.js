@@ -6,20 +6,14 @@ const ratingValue = document.querySelector('.rating_value');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        ratingValue.append = button.innerHTML;
+        ratingValue.innerHTML = button.innerHTML;
     })
 })
 
 
-
-submitButton.addEventListener('click', e =>{
+submitButton.addEventListener('click', e => {
     ratingState.style.display = 'none';
-    thankYouState.style.display= 'flex';
+    thankYouState.style.display = 'flex';
 
     console.log('si weeee ')
 })
-
-
-
-
-console.log(ratingValue)
